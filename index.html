@@ -1,14 +1,257 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thư Viện 8</title>
-  <link rel="stylesheet" href="style/main.css">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thư viện 8</title>
+    <link rel="stylesheet" href="style/main.css">
 </head>
+
 <body>
-  <h1>Chào mừng đến với hệ thống Quản Lý Thư Viện!</h1>
-  <button onclick="alert('Bạn đã nhấn nút!')">Nhấn tôi</button>
+    <header>
+        <div class="logo">
+            <p>Thư viện 8</p>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Tra cứu thông tin</a></li>
+            <li><a href="#">Đăng ký mượn</a></li>
+            <li><a href="#">Xem review</a></li>
+            <li><a href="login.html">Đăng nhập</a></li>
+        </ul>
+    </header>
+    <main class="content">
+        <div class="main-left">
+            <img src="images/thuVienHomePage.jpg" alt="Thư viện 8" class="main-image">
+            <p class="description">
+                <strong>Thư viện 8</strong>là một không gian tri thức đầy cảm hứng, nơi hội tụ sách vở, tài liệu và
+                những câu chuyện phong phú. Dù là nơi yên tĩnh để đắm chìm trong từng trang sách hay một điểm gặp gỡ
+                dành cho những tâm hồn yêu tri thức, "Thư viện 8" luôn mở ra những cánh cửa mới cho sự khám phá và sáng
+                tạo. Với sự đa dạng về thể loại và một không gian thoải mái, đây chính là điểm dừng chân lý tưởng cho
+                bất kỳ ai đang tìm kiếm nguồn cảm hứng mới.
+            </p>
+        </div>
+        <aside class="main-right">
+            <button class="search-button">Tìm kiếm sách...</button>
+            <div class="recommend">
+                <h3 style="text-align: center;">Đề xuất</h3>
+                <div class="book-list">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="book-item">
+                                    <img src="images/ngheThuatBaoDuongXeMay.jpg" alt="Book 1">
+                                    <button>Chi tiết</button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="book-item">
+                                    <img src="images/AiTangLuongChoB.png" alt="Book 1">
+                                    <button>Chi tiết</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="book-item">
+                                    <img src="images/Namiya.jpg" alt="Book 1">
+                                    <button>Chi tiết</button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="book-item">
+                                    <img src="images/damNghiLai.jpg" alt="Book 1">
+                                    <button>Chi tiết</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="book-item">
+                                    <img src="images/ChaGiauChaNgheo.jpg" alt="Book 1">
+                                    <button>Chi tiết</button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="book-item">
+                                    <img src="images/TDNhanhVaCham.jpg" alt="Book 1">
+                                    <button>Chi tiết</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <section class="favorite-books">
+        <h2>Sách được bạn đọc ưa chuộng</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <img src="images/TrenDuongBang.jpg" alt="Trên đường băng">
+                <h4>Trên đường băng</h4>
+                <p>Cuốn sách truyền cảm hứng dành cho những bạn trẻ đang chuẩn bị bước vào cuộc sống tự lập, khởi
+                    nghiệp, hoặc muốn thay đổi tư duy để thành công.</p>
+                <button>Chi tiết</button>
+            </div>
+            <div class="book-card">
+                <img src="images/ChaGiauChaNgheo.jpg" alt="Rich Dad Poor Dad">
+                <h4>Rich dad poor dad</h4>
+                <p>Cuốn sách nhấn mạnh tầm quan trọng của kiến thức tài chính và cách tư duy khác biệt giữa người giàu
+                    và người nghèo trong việc quản lý tiền bạc và đầu tư.</p>
+                <button>Chi tiết</button>
+            </div>
+            <div class="book-card">
+                <img src="images/Babylon.jpg" alt="The Richest Man in Babylon">
+                <h4>Rich dad poor dad</h4>
+                <p>Cuốn sách về cách làm giàu hiệu quả nhất của mọi thời đại, chia sẻ tư duy tài chính vững chắc để
+                    thành công bền vững.</p>
+                <button>Chi tiết</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="book-categories">
+        <h2>Các Thể Loại Sách Phổ Biến</h2>
+        <div class="category-grid">
+            <a href="#">
+                <div class="category-card">
+                    <h3>Văn học</h3>
+                    <p>Những tác phẩm mang giá trị nghệ thuật, phản ánh đời sống và cảm xúc con người.</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="category-card">
+                    <h3>Kinh tế - Tài chính</h3>
+                    <p>Những cuốn sách giúp bạn hiểu về đầu tư, quản lý tài chính cá nhân và kinh doanh.</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="category-card">
+                    <h3>Khoa học - Công nghệ</h3>
+                    <p>Khám phá những tiến bộ khoa học và ứng dụng công nghệ trong cuộc sống.</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="category-card">
+                    <h3>Phát triển bản thân</h3>
+                    <p>Giúp bạn rèn luyện kỹ năng, tư duy tích cực và phát triển cá nhân.</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="category-card">
+                    <h3>Lịch sử</h3>
+                    <p>Những sự kiện, nhân vật quan trọng giúp bạn hiểu về quá khứ và bài học lịch sử.</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="category-card">
+                    <h3>Sức khỏe - Dinh dưỡng</h3>
+                    <p>Những cuốn sách hướng dẫn chăm sóc sức khỏe, xây dựng chế độ ăn khoa học và phòng ngừa bệnh tật.
+                    </p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="category-card">
+                    <h3>Du lịch - Văn hóa</h3>
+                    <p>Khám phá thế giới qua góc nhìn đa chiều, từ địa danh nổi tiếng đến nét đẹp văn hóa độc đáo của
+                        các quốc gia.</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="category-card">
+                    <h3>Truyện tranh - Graphic Novels</h3>
+                    <p>Kết hợp nghệ thuật minh họa sinh động với cốt truyện hấp dẫn, phù hợp với mọi lứa tuổi.</p>
+                </div>
+            </a>
+
+        </div>
+        <button class="view-all">Xem tất cả thể loại</button>
+    </section>
+
+    <section class="popular-authors">
+        <h2>Các tác giả phổ biến</h2>
+        <div class="author-grid">
+            <div class="author-card">
+                <img src="images/TacGia/DangThuyTram.jpg" alt="Đặng Thùy Trâm">
+                <p>Đặng Thùy Trâm</p>
+                <button>Xem</button>
+            </div>
+            <div class="author-card">
+                <img src="images/TacGia/NguyenHuyThiep.jpg" alt="Nguyễn Huy Thiệp">
+                <p>Nguyễn Huy Thiệp</p>
+                <button>Xem</button>
+            </div>
+            <div class="author-card">
+                <img src="images/TacGia/PhanYYen.jpg" alt="Phan Ý Yên">
+                <p>Phan Ý Yên</p>
+                <button>Xem</button>
+            </div>
+            <div class="author-card">
+                <img src="images/TacGia/NguyenNgocTu.jpg" alt="Nguyễn Ngọc Tư">
+                <p>Nguyễn Ngọc Tư</p>
+                <button>Xem</button>
+            </div>
+            <div class="author-card">
+                <img src="images/TacGia/NguyenNhatAnh.jpg" alt="Nguyễn Nhật Ánh">
+                <p>Nguyễn Nhật Ánh</p>
+                <button>Xem</button>
+            </div>
+            <div class="author-card">
+                <img src="images/TacGia/VoTrongPhung.jpg" alt="Võ Trọng Phụng">
+                <p>Võ Trọng Phụng</p>
+                <button>Xem</button>
+            </div>
+            <div class="author-card">
+                <img src="images/TacGia/TonyBS.jpg" alt="Tony Buổi Sáng">
+                <p>Tony Buổi Sáng</p>
+                <button>Xem</button>
+            </div>
+            <div class="author-card">
+                <img src="images/TacGia/ThichNhatHanh.jpg" alt="Thích Nhất Hạnh">
+                <p>Thích Nhất Hạnh</p>
+                <button>Xem</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="library-reviews">
+        <h2>Đánh giá từ độc giả</h2>
+        <div class="review-grid">
+            <div class="review-card">
+                <p>"Ohh shiet, thư viện này quá đỉnh"</p>
+                <h4>Nike Simp</h4>
+                <span>Độc giả mới</span>
+            </div>
+            <div class="review-card">
+                <p>"Mình đến đây mỗi tuần, các đầu sách rất đa dạng!"</p>
+                <h4>Cô gái một sách</h4>
+                <span>Kỳ cựu</span>
+            </div>
+            <div class="review-card">
+                <p>"Được bạn Hùng giới thiệu, quả thực thư viện rất tốt."</p>
+                <h4>Anh Long Mộng Gà</h4>
+                <span>Độc giả mới</span>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -35,30 +278,36 @@
 
 
 
+    <footer class="footer">
+        <div class="footer-section logo-social">
+            <h2>Thư viện 8</h2>
+            <div class="social-icons">
+                <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="icons/youtube.svg" alt="YouTube"></a>
+                <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+            </div>
+        </div>
 
+        <div class="footer-section branches">
+            <h3>Chi Nhánh</h3>
+            <p>123 Đường Hạnh Phúc, Phường Bình An, Quận 1, TP. Hồ Chí Minh</p>
+            <p>456 Đại lộ Tương Lai, Phường Ánh Sáng, Quận 7, TP. Hồ Chí Minh</p>
+            <p>789 Ngõ Mộng Mơ, Phường Thanh Bình, TP. Hà Nội, Việt Nam</p>
+        </div>
 
+        <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <p>0987 123 456</p>
+            <p>thuvien8@gmail.com</p>
+            <p>Tầng 1 Sunrise City</p>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>Công ty TNHH Hòa Hoe ©Cooperation</p>
+        </div>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script src="script.js"></script>
 </body>
+
 </html>
