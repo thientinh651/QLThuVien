@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Quản lý sách</title>
+  <!-- <link rel="stylesheet" href="/css/styleQLS.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/style3.css" />
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <i class="fa-solid fa-book-open"></i>
+      </div>
+      <ul class="menu">
+        <li class="active"> <a href="../KhoSachPhanHoiNhanVien/QuanLySach.html">
+            <i class="fa-solid fa-book-open"></i> Quản lý sách</a>
+        </li>
+        <li><a href="../DocGiaVaTraSach/DocGia/index.html">
+            <i class="fa-solid fa-user"></i> Quản lý độc giả</a></li>
+        <li><a href="../KhoSachPhanHoiNhanVien/QuanLyNhanVien.html">
+            <i class="fa-solid fa-user-tie"></i> Quản lý nhân
+            viên</a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-book-open-reader"></i> Quản lý mượn sách</a>
+        </li>
+        <li><a href="baocao_thongke.html">
+            <i class="fa-solid fa-square-poll-vertical"></i> Thống kê</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <h2>Quản lý sách</h2>
+        <div class="logout">
+          <span><i class="fa-solid fa-right-from-bracket"></i></span>
+          <a href="#">Đăng xuất</a>
+        </div>
+      </header>
+
+      <section class="dashboard-grid">
+        <div class="chart-container card" id="borrow-return-chart-container">
+          <h3 class="card-title">Số lượng sách mượn /trả</h3>
+          <img src="https://via.placeholder.com/600x300?text=Biểu+đồ+Số+lượng+sách+mượn/trả"
+            alt="Biểu đồ Số lượng sách mượn/trả" class="chart-placeholder">
+        </div>
+
+        <div class="popular-books card">
+          <h3 class="card-title">Sách phổ biến</h3>
+          <ul class="popular-books-list">
+            <li>
+              <img src="https://via.placeholder.com/40x60?text=Sách+1" alt="[Light Novel] Chúa Tể Bóng Tối">
+              <p>[Light Novel] Chúa Tể Bóng Tối - Tập 3 - Bản Giới Hạn - Tặng Kèm Shadow Card + Mini Artbook</p>
+            </li>
+            <li>
+              <img src="https://via.placeholder.com/40x60?text=Sách+2" alt="Làm Bạn Với Cô Nàng Dễ Thương">
+              <p>Làm Bạn Với Cô Nàng Dễ Thương Nhí Lớp - Tập 1 - Tặng Kèm Postcard</p>
+            </li>
+            <li>
+              <img src="https://via.placeholder.com/40x60?text=Sách+3" alt="Tuổi Thơ Dữ Dội">
+              <p>Tuổi Thơ Dữ Dội - Tập 1 (Tái Bản 2019)</p>
+            </li>
+            <li>
+              <img src="https://via.placeholder.com/40x60?text=Sách+4" alt="Tuổi Thơ Dữ Dội Tập 2">
+              <p>Tuổi Thơ Dữ Dội - Tập 2 (Tái Bản 2019)</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="chart-container card full-width-chart" id="reader-growth-chart-container">
+          <h3 class="card-title">Số lượng độc giả theo thời gian</h3>
+          <img src="https://via.placeholder.com/1000x350?text=Biểu+đồ+Số+lượng+độc+giả"
+            alt="Biểu đồ Số lượng độc giả theo thời gian" class="chart-placeholder">
+        </div>
+    </main>
+  </div>
+</body>
+
+</html>
