@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Thư viện 8</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Thư viện 8</h1>
+        </div>
+        <nav>
+          <ul>
+           <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="./tra_cuu.html">Tra cứu thông tin</a></li>
+            <li><a href="#">Đăng ký mượn</a></li>
+            <li><a href="../KhoSachPhanHoiNhanVien/phanhoi.html">Phản hồi</a></li>
+            <li><a href="thanh_toan.html" class="active">Thanh toán</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-background"></div>
+
+        <div class="search-container">
+          <h2>Bạn muốn tìm gì?</h2>
+          <form class="search-form" id="searchForm">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Nhập tên sách, tác giả, từ khóa..."
+              class="search-input"
+            />
+            <button type="submit" class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div class="filter-options">
+            <select name="publish-year" class="filter-select">
+              <option value="">Năm phát hành</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+            <select name="sort-by" class="filter-select">
+              <option value="name">Theo tên</option>
+              <option value="author">Theo tác giả</option>
+              <option value="newest">Mới nhất</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="results-section container hidden">
+        <div class="results-header">
+          <h2>Danh sách</h2>
+        </div>
+        <div id="search-results-list"></div>
+        <nav class="pagination">
+          <ul></ul>
+        </nav>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-section logo-social" bis_skin_checked="1">
+        <h2>Thư viện 8</h2>
+        <div class="social-icons" bis_skin_checked="1">
+          <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
+          <a href="#"><img src="icons/youtube.svg" alt="YouTube" /></a>
+          <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+        </div>
+      </div>
+
+      <div class="footer-section branches" bis_skin_checked="1">
+        <h3>Chi Nhánh</h3>
+        <p>123 Đường Hạnh Phúc, Phường Bình An, Quận 1, TP. Hồ Chí Minh</p>
+        <p>456 Đại lộ Tương Lai, Phường Ánh Sáng, Quận 7, TP. Hồ Chí Minh</p>
+        <p>789 Ngõ Mộng Mơ, Phường Thanh Bình, TP. Hà Nội, Việt Nam</p>
+      </div>
+
+      <div class="footer-section contact" bis_skin_checked="1">
+        <h3>Liên hệ</h3>
+        <p>0987 123 456</p>
+        <p>thuvien8@gmail.com</p>
+        <p>Tầng 1 Sunrise City</p>
+      </div>
+      <hr />
+      <div class="footer-bottom" bis_skin_checked="1">
+        <p>Công ty TNHH Hòa Hoe ©Cooperation</p>
+      </div>
+    </footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>

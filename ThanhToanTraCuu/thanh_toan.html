@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán phí phạt - Thư viện 8</title>
+    <link rel="stylesheet" href="styles/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Thư viện 8</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="./tra_cuu.html">Tra cứu thông tin</a></li>
+            <li><a href="#">Đăng ký mượn</a></li>
+            <li><a href="../KhoSachPhanHoiNhanVien/phanhoi.html">Phản hồi</a></li>
+            <li><a href="thanh_toan.html" class="active">Thanh toán</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-container">
+      <section class="borrowed-books">
+        <h2>Danh sách Sách đã mượn</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>
+                <input type="checkbox" id="select-all-books" />
+                <label for="select-all-books" class="visually-hidden"
+                  >Chọn tất cả</label
+                >
+                Chọn tất cả
+              </th>
+              <th>Sách</th>
+              <th>Số lượng</th>
+              <th>Ngày mượn</th>
+              <th>Ngày trả</th>
+              <th>Ngày trả thực tế</th>
+              <th>Số ngày trễ</th>
+              <th>Phí phạt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" name="book_id[]" value="1" /></td>
+              <td class="book-info">
+                <img
+                  src="https://via.placeholder.com/40x60?text=Sách"
+                  alt="[Light Novel] Chúa Tể Bóng Tối"
+                />
+                <div>
+                  <p class="book-title">
+                    [Light Novel] Chúa Tể Bóng Tối - Tập 3 - Tặng Kèm Bookmark +
+                    Standee + Emotion Card + Mini Artbook
+                  </p>
+                </div>
+              </td>
+              <td>1</td>
+              <td>14/02/2025</td>
+              <td>22/4/2025</td>
+              <td>24/4/2025</td>
+              <td>2</td>
+              <td>20.000 đ</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="book_id[]" value="2" /></td>
+              <td class="book-info">
+                <img
+                  src="https://via.placeholder.com/40x60?text=Sách"
+                  alt="Thần Đồng Đất Việt"
+                />
+                <div>
+                  <p class="book-title">
+                    Thần Đồng Đất Việt – Tập 35 – Hạt Gạo Làng Ta
+                  </p>
+                </div>
+              </td>
+              <td>1</td>
+              <td>25/02/2025</td>
+              <td>03/03/2025</td>
+              <td>30/03/2025</td>
+              <td>27</td>
+              <td>270.000 đ</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="book_id[]" value="3" checked />
+              </td>
+              <td class="book-info">
+                <img
+                  src="https://via.placeholder.com/40x60?text=Sách"
+                  alt="Thám Tử Lừng Danh Conan"
+                />
+                <div>
+                  <p class="book-title">
+                    Thám Tử Lừng Danh Conan – Tập 16 (Tái Bản 2023)
+                  </p>
+                </div>
+              </td>
+              <td>1</td>
+              <td>13/04/2025</td>
+              <td>27/04/2025</td>
+              <td>27/04/2025</td>
+              <td>0</td>
+              <td>0 đ</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="book_id[]" value="4" /></td>
+              <td class="book-info">
+                <img
+                  src="https://via.placeholder.com/40x60?text=Sách"
+                  alt="Làm Bạn Với Bầu Trời"
+                />
+                <div>
+                  <p class="book-title">
+                    Làm Bạn Với Bầu Trời Có Nắng Để Thương Nhớ Lớp Lớp - Tập 1 -
+                    Tặng Kèm Postcard
+                  </p>
+                </div>
+              </td>
+              <td>1</td>
+              <td>02/03/2025</td>
+              <td>27/04/2025</td>
+              <td>27/04/2025</td>
+              <td>0</td>
+              <td>0 đ</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="book_id[]" value="5" checked />
+              </td>
+              <td class="book-info">
+                <img
+                  src="https://via.placeholder.com/40x60?text=Sách"
+                  alt="Tuổi Thơ Dữ Dội"
+                />
+                <div>
+                  <p class="book-title">
+                    Tuổi Thơ Dữ Dội - Tập 1 (Tái Bản 2019)
+                  </p>
+                </div>
+              </td>
+              <td>1</td>
+              <td>04/04/2025</td>
+              <td>07/04/2025</td>
+              <td>14/04/2025</td>
+              <td>7</td>
+              <td>70.000 đ</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="book_id[]" value="6" /></td>
+              <td class="book-info">
+                <img
+                  src="https://via.placeholder.com/40x60?text=Sách"
+                  alt="Tuổi Thơ Dữ Dội Tập 2"
+                />
+                <div>
+                  <p class="book-title">
+                    Tuổi Thơ Dữ Dội - Tập 2 (Tái Bản 2019)
+                  </p>
+                </div>
+              </td>
+              <td>1</td>
+              <td>04/04/2025</td>
+              <td>08/04/2025</td>
+              <td>15/04/2025</td>
+              <td>7</td>
+              <td>70.000 đ</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="payment-details">
+        <h2>Thanh toán phí phạt</h2>
+        <form id="payment-form">
+          <div class="form-grid">
+            <div class="form-left">
+              <div class="form-group">
+                <label for="full-name">Họ tên</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="full-name"
+                  placeholder="Nhập họ tên người nhận"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Nhập Email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="ward">Phường/Xã</label>
+                <input
+                  type="text"
+                  id="ward"
+                  name="ward"
+                  placeholder="Chọn Phường/Xã"
+                />
+              </div>
+              <div class="form-group">
+                <label for="district">Quận/Huyện</label>
+                <input
+                  type="text"
+                  id="district"
+                  name="district"
+                  placeholder="Chọn Quận/Huyện"
+                />
+              </div>
+              <div class="form-group">
+                <label for="city">Tỉnh/Thành phố</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="Chọn Tỉnh/Thành phố"
+                />
+              </div>
+              <div class="form-group">
+                <label for="address">Địa chỉ nhận hàng</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Nhập địa chỉ nhận hàng"
+                />
+              </div>
+              <div class="form-group">
+                <label for="shipping-method">Phương thức vận chuyển</label>
+                <input
+                  type="text"
+                  id="shipping-method"
+                  name="shipping-method"
+                  placeholder="Chọn phương thức vận chuyển"
+                />
+              </div>
+            </div>
+
+            <div class="form-right">
+              <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Ví dụ: 09xx-xxx-xxx (10 ký tự số)"
+                />
+              </div>
+              <div class="form-group payment-methods">
+                <label>Phương thức thanh toán</label>
+                <div class="payment-option">
+                  <input
+                    type="radio"
+                    id="zalo-pay"
+                    name="payment-method"
+                    value="zalo-pay"
+                  />
+                  <label for="zalo-pay"
+                    ><i class="fa-solid fa-qrcode"></i> Ví Zalo Pay</label
+                  >
+                </div>
+                <div class="payment-option">
+                  <input
+                    type="radio"
+                    id="visa-master"
+                    name="payment-method"
+                    value="visa-master"
+                    checked
+                  />
+                  <label for="visa-master"
+                    ><i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i> Visa /
+                    Master</label
+                  >
+                </div>
+                <div class="payment-option">
+                  <input
+                    type="radio"
+                    id="momo"
+                    name="payment-method"
+                    value="momo"
+                  />
+                  <label for="momo"
+                    ><i class="fa-solid fa-wallet"></i> Ví Momo</label
+                  >
+                </div>
+                <div class="payment-option">
+                  <input
+                    type="radio"
+                    id="atm-internet-banking"
+                    name="payment-method"
+                    value="atm-internet-banking"
+                  />
+                  <label for="atm-internet-banking"
+                    ><i class="fa-solid fa-credit-card"></i> ATM / Internet
+                    Banking</label
+                  >
+                </div>
+                <div class="payment-option">
+                  <input
+                    type="radio"
+                    id="cod"
+                    name="payment-method"
+                    value="cod"
+                  />
+                  <label for="cod"
+                    ><i class="fa-solid fa-truck-fast"></i> Chuyển tiền mặt qua
+                    bưu điện</label
+                  >
+                </div>
+              </div>
+
+              <div class="summary">
+                <div class="summary-row">
+                  <span>Thành tiền</span>
+                  <span id="subtotal-amount">0đ</span>
+                </div>
+                <div class="summary-row total">
+                  <span>Tổng tiền (Bao gồm VAT)</span>
+                  <span id="total-amount">0đ</span>
+                </div>
+                <button type="submit" class="btn-checkout">THANH TOÁN</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="additional-options">
+            <h3>Thông tin khác</h3>
+            <div class="option-group">
+              <input type="radio" id="note" name="other-info" value="note" />
+              <label for="note">Ghi chú</label>
+            </div>
+            <div class="option-group">
+              <input
+                type="radio"
+                id="export-invoice"
+                name="other-info"
+                value="export-invoice"
+              />
+              <label for="export-invoice">Xuất biên lai thanh toán</label>
+              <a href="#" class="invoice-details-link">chi tiết</a>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-section logo-social" bis_skin_checked="1">
+        <h2>Thư viện 8</h2>
+        <div class="social-icons" bis_skin_checked="1">
+          <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
+          <a href="#"><img src="icons/youtube.svg" alt="YouTube" /></a>
+          <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+        </div>
+      </div>
+
+      <div class="footer-section branches" bis_skin_checked="1">
+        <h3>Chi Nhánh</h3>
+        <p>123 Đường Hạnh Phúc, Phường Bình An, Quận 1, TP. Hồ Chí Minh</p>
+        <p>456 Đại lộ Tương Lai, Phường Ánh Sáng, Quận 7, TP. Hồ Chí Minh</p>
+        <p>789 Ngõ Mộng Mơ, Phường Thanh Bình, TP. Hà Nội, Việt Nam</p>
+      </div>
+
+      <div class="footer-section contact" bis_skin_checked="1">
+        <h3>Liên hệ</h3>
+        <p>0987 123 456</p>
+        <p>thuvien8@gmail.com</p>
+        <p>Tầng 1 Sunrise City</p>
+      </div>
+      <hr />
+      <div class="footer-bottom" bis_skin_checked="1">
+        <p>Công ty TNHH Hòa Hoe ©Cooperation</p>
+      </div>
+    </footer>
+    <script src="script/script2.js"></script>
+  </body>
+</html>

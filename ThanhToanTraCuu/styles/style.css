@@ -1,0 +1,462 @@
+/* Thiết lập chung */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Phần Hero */
+.hero {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  margin-top: 70px;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/danh-muc-sach.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+.search-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px 40px;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 90%;
+  position: relative;
+  z-index: 1;
+}
+
+.search-container h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #fff;
+}
+
+.search-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 15px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.filter-select {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #555;
+  font-size: 16px;
+  min-width: 180px;
+}
+
+/* Results Section */
+.results-section {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.results-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.results-header i {
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#search-results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book-item {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.book-cover {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+.book-details {
+  flex-grow: 1;
+}
+
+.book-details h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.book-details h3 a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.book-details h3 a:hover {
+  text-decoration: underline;
+}
+
+.book-meta {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+}
+
+.book-meta strong {
+  color: #333;
+}
+
+.book-status {
+  margin-top: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.status-dot.available {
+  background-color: #28a745;
+}
+
+.status-dot.unavailable {
+  background-color: #dc3545;
+}
+
+.book-actions {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.book-actions a {
+  color: #555;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.book-actions a:hover {
+  color: #007bff;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  padding: 30px 0;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 5px;
+}
+
+.pagination .page-link {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #007bff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .page-link:hover {
+  background-color: #e9ecef;
+  border-color: #ddd;
+}
+
+.pagination .page-link.current {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  font-weight: bold;
+}
+
+.pagination .page-link.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+/* Class để ẩn các phần tử */
+.hidden {
+  display: none !important;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px 40px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin-bottom: 8px;
+}
+
+.social-icons a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 60px 0;
+    margin-top: 120px; /* Cập nhật cho header dạng cột */
+  }
+
+  .search-container {
+    padding: 20px;
+  }
+
+  .search-container h2 {
+    font-size: 24px;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-input {
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px;
+  }
+
+  .search-button {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .filter-options {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .filter-select:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .book-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .book-cover {
+    margin-bottom: 10px;
+  }
+
+  .book-details {
+    width: 100%;
+  }
+
+  .book-actions {
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .pagination .page-link {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý độc giả</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="sidebar">
+            <ul>
+                <li><a href="../../index.html"><i class="fas fa-book"></i> Trang chủ</a></li>
+                <li><a href="../../KhoSachPhanHoiNhanVien/QuanLySach.html"><i class="fas fa-book"></i> Quản lý sách</a></li> <!-- Biểu tượng sách -->
+                <li><a href="../DocGia/index.html" class="active"><i class="fas fa-users"></i> Quản lý độc giả</a></li>
+                <!-- Biểu tượng người dùng -->
+                <li><a href="../../KhoSachPhanHoiNhanVien/QuanLyNhanVien.html"><i class="fas fa-users-cog"></i> Quản lý nhân viên</a></li>
+                <!-- Biểu tượng nhân viên -->
+                <li><a href="#"><i class="fas fa-chart-line"></i> Báo cáo & thống kê</a></li>
+                <!-- Biểu tượng biểu đồ -->
+            </ul>
+        </div>
+
+
+
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="header">
+                <h2>Quản lý độc giả</h2>
+                <button class="add-btn">Đăng xuất</button>
+            </div>
+            <div class="table-controls">
+                <div class="actions">
+                    <button class="action-btn add-btn">
+                        <i class="fa-solid fa-plus"></i> Thêm
+                    </button>
+                    <button class="action-btn delete-btn">
+                        <i class="fa-solid fa-trash"></i> Xóa
+                    </button>
+                    <button class="action-btn edit-btn">
+                        <i class="fa-solid fa-pen"></i> Sửa
+                    </button>
+                </div>
+            </div>
+
+
+
+
+            <div class="search-filter">
+                <input type="text" placeholder="Tìm kiếm độc giả..." class="search-input">
+                <select>
+                    <option value="">Giới tính</option>
+                    <option value="male">Nam</option>
+                    <option value="female">Nữ</option>
+                </select>
+                <select>
+                    <option value="">Độ tuổi</option>
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36+">36+</option>
+                </select>
+                <select>
+                    <option value="">Sách đang mượn</option>
+                    <option value="yes">Có</option>
+                    <option value="no">Không</option>
+                </select>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã</th>
+                        <th>Họ tên</th>
+                        <th>Ngày sinh</th>
+                        <th>SDT</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DGO 001</td>
+                        <td>Nguyễn văn Hai</td>
+                        <td>7/11/1999</td>
+                        <td>0847977781</td>
+                        <td>nguyenvanhai@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>DGO 002</td>
+                        <td>Nguyễn văn Ba</td>
+                        <td>12/3/1999</td>
+                        <td>0123456789</td>
+                        <td>nguyenvanba@gmail.com</td>
+                    </tr>
+                    <!-- Các dòng dữ liệu khác -->
+                </tbody>
+            </table>
+
+            <div class="detail-panel">
+                <h3>Chi tiết độc giả</h3>
+                <p><strong>Họ tên:</strong> Nguyễn văn Hai</p>
+                <p><strong>Ngày sinh:</strong> 7/11/1999</p>
+                <p><strong>SDT:</strong> 0847977781</p>
+                <p><strong>Email:</strong> nguyenvanhai@gmail.com</p>
+                <p><strong>Số thẻ thư viện:</strong> TV001</p>
+                <p><strong>Ngày cấp:</strong> 02/02/2025</p>
+                <p><strong>Sách mượn:</strong> Mượn sách ngày 07/11/2024</p>
+                <button class="btn">Cập lại thẻ</button>
+                <button class="btn">Sửa</button>
+                <button class="btn">Xóa</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,0 @@
-https://github.com/thientinh651/QLThuVien.git
-
-
-git add .
-git commit -m "Thêm giao diện ban đầu"
-git push origin main
