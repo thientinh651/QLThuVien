@@ -196,3 +196,28 @@
     grid-template-columns: 1fr;
   }
 }
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.stats-table thead {
+  background-color: #f0f2f5;
+  font-weight: bold;
+}
+
+.stats-table th,
+.stats-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.stats-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.stats-table tr:hover {
+  background-color: #f1f1f1;
+}
