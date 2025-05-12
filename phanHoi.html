@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thư viện 8 - Đánh giá</title>
-  <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style/phanHoi.css">
-</head> 
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thư viện 8</title>
+     <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
 <body>
-  <header class="navbar">
-    <h1>Thư viện 8</h1>     <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <header>
+        <div class="logo">
+            <p>Thư viện 8</p>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="traCuu.html">Tra cứu thông tin</a></li>
+            <li><a href="dangKyMuon.html">Đăng ký mượn</a></li>
+            <li><a href="phanHoi.html">Phản hồi</a></li>
+            <li><a href="login.html">Đăng nhập</a></li>
+        </ul>
+    </header>
 
-    <nav>
-      <ul>
-        <a href="index.html">Trang chủ</a>
-        <a href="traCuu.html">Tra cứu thông tin</a>
-        <a href="dangKyMuon.html">Đăng ký mượn</a>
-        <!-- <a href="#">Xem review</a> -->
-        <a href="login.html">Đăng nhập</a>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="feedback-section">
-    <p class="intro-text">
-      <em>
-        Để không ngừng nâng cao chất lượng dịch vụ, Thư viện 8 rất mong nhận được phản hồi và đánh giá của quý độc giả về trải nghiệm website. Sự đóng góp của quý vị sẽ là nguồn động lực lớn để chúng tôi hoàn thiện hơn.
-      </em>
+<section style="text-align: center; font-family: 'Roboto', sans-serif; margin: 40px auto; max-width: 800px;">
+    <p style="font-style: italic;">
+        Để không ngừng nâng cao chất lượng dịch vụ, Thư viện 8 rất mong nhận được phản hồi và đánh giá của quý độc giả về trải nghiệm website.
+        <strong>Sự đóng góp của quý vị sẽ là nguồn động lực lớn để chúng tôi hoàn thiện hơn.</strong>
     </p>
 
-    <div class="feedback-box">
-      <div class="feedback-header">ĐÁNH GIÁ CỦA ĐỘC GIẢ</div>
-      <textarea placeholder="Nhập đánh giá của bạn tại đây..."></textarea>
-    </div>
-
-    <button class="submit-button">Gửi đánh giá</button>
-  </main>
-  
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-left">
-        <h2>Thư viện 8</h2>
-        <div class="social-icons">
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-youtube"></i>
-          <i class="fab fa-instagram"></i>
+    <div style="border: 2px solid #000; border-radius: 20px; overflow: hidden; margin-top: 20px;">
+        <div style="background-color: #dcdcdc; padding: 10px; font-weight: bold; color: #f7931e;">
+            ĐÁNH GIÁ CỦA ĐỘC GIẢ
         </div>
-      </div>
-
-      <div class="footer-middle">
-        <h4>Chi Nhánh</h4>
-        <p>123 Đường Hạnh Phúc, Phường Bình An, Quận 1, TP. Hồ Chí Minh</p>
-        <p>456 Đại lộ Tương Lai, Phường Ánh Sáng, Quận 7, TP. Hồ Chí Minh</p>
-        <p>789 Ngõ Mộng Mơ, Phường Thanh Bình, TP. Hà Nội, Việt Nam</p>
-      </div>
-
-      <div class="footer-right">
-        <h4>Liên hệ</h4>
-        <p>0987 123 456</p>
-        <p>thuvien8@gmail.com</p>
-        <p>Tầng 1 Sunrise City</p>
-      </div>
+        <textarea placeholder="Nhập đánh giá của bạn tại đây..." 
+                  style="width: 100%; height: 150px; border: none; padding: 15px; font-size: 16px; resize: none;"></textarea>
     </div>
-    <p class="copyright">Công ty TNHH Hòa Học ©Cooperation</p>
-  </footer>
+
+    <button style="margin-top: 15px; background-color: black; color: white; padding: 10px 25px; border: none; border-radius: 10px; font-size: 16px; cursor: pointer;">
+        Gửi đánh giá
+    </button>
+</section>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-section logo-social">
+            <h2>Thư viện 8</h2>
+            <div class="social-icons">
+                <a href="#"><img src="images/fb.jpg" alt="Facebook"></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="images/insta.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <div class="footer-section branches">
+            <h3>Chi Nhánh</h3>
+            <p>123 Đường Hạnh Phúc, Phường Bình An, Quận 1, TP. Hồ Chí Minh</p>
+            <p>456 Đại lộ Tương Lai, Phường Ánh Sáng, Quận 7, TP. Hồ Chí Minh</p>
+            <p>789 Ngõ Mộng Mơ, Phường Thanh Bình, TP. Hà Nội, Việt Nam</p>
+        </div>
+
+        <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <a href="tel:1900 545591">📞 Hotline: 0987 123 456</a>
+            <br>
+            <a href="mailto:thuvien8@gmail.com">✉️ thuvien8@gmail.com</a>
+            <br>
+            <!-- <p>0987 123 456</p>
+            <p>thuvien8@gmail.com</p> -->
+            <p>Tầng 1 Sunrise City</p>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>Công ty TNHH Hòa Hoe ©Cooperation</p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
