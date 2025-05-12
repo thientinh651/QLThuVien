@@ -38,7 +38,7 @@
     font-size: 18px;
 }
 
-.sidebar ul li a.active {
+.active {
     font-weight: bold;
   background-color: #5b6471;
 }
