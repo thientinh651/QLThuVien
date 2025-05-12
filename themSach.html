@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thêm Sách</title>
+  <link rel="stylesheet" href="style/QLS.css">     <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-actions {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .form-actions button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-actions button:hover {
+      background-color: #2980b9;
+    }
+    .form-actions button:hover {
+      background-color: #2980b9;
+    } button a {
+      color: black;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="form-container">
+     <div class="form-group">
+          <button><a href="quanLyMuonSach.html">Quay lại</a></button>
+        </div>
+    <h2>Thêm Sách Mới</h2>
+    <form>
+      <div class="form-group">
+        <label for="ma">Mã sách</label>
+        <input type="text" id="ma" name="ma" required />
+      </div>
+      <div class="form-group">
+        <label for="ten">Tên sách</label>
+        <input type="text" id="ten" name="ten" required />
+      </div>
+      <div class="form-group">
+        <label for="matacgia">Tác giả</label>
+        <input type="number" id="matacgia" name="matacgia" required />
+      </div>
+      <div class="form-group">
+        <label for="matheloai">Thể loại</label>
+        <input type="number" id="matheloai" name="matheloai" required />
+      </div>
+      <div class="form-group">
+        <label for="manxb">Nhà xuất bản</label>
+        <input type="number" id="manxb" name="manxb" required />
+      </div>
+      <div class="form-group">
+        <label for="ngayxb">Ngày xuất bản</label>
+        <input type="date" id="ngayxb" name="ngayxb" required />
+      </div>
+      <div class="form-group">
+        <label for="gia">Giá</label>
+        <input type="number" id="gia" name="gia" required />
+      </div>
+      <div class="form-group">
+        <label for="soluong">Số lượng</label>
+        <input type="number" id="soluong" name="soluong" required />
+      </div>
+      <div class="form-actions">
+        <button type="submit"><i class="fa-solid fa-plus"></i> Thêm Sách</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

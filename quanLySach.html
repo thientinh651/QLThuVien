@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Quản lý Nhân Viên</title>
-  <link rel="stylesheet" href="styleQLNV.css">
+  <title>Quản lý sách</title>     <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+  <link rel="stylesheet" href="style/QLS.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,19 +18,19 @@
         <i class="fa-solid fa-book-open"></i>
       </div>
       <ul class="menu">
-        <li><a href="../index.html"><i class="fas fa-book"></i> Trang chủ</a></li>
-        <li><i class="fa-solid fa-book-open"></i> Quản lý sách</li>
-        <li><i class="fa-solid fa-user"></i> Quản lý độc giả</li>
-        <li class="active"><i class="fa-solid fa-user-tie"></i> Quản lý nhân viên</li>
-        <li><i class="fa-solid fa-book-open-reader"></i> Quản lý mượn sách</li>
-        <li><i class="fa-solid fa-square-poll-vertical"></i> Thống kê</li>
+        <li><a href="indexNhanVien.html"><i class="fas fa-book"></i> Trang chủ</a></li>
+        <li ><a href="quanLySach.html"><i class="fa-solid fa-book-open"></i> Quản lý sách</a></li>
+        <li><a href="quanLyDocGia.html"><i class="fa-solid fa-user"></i> Quản lý độc giả</a></li>
+        <li ><a href="quanLyNhanVien.html"><i class="fa-solid fa-user-tie"></i> Quản lý nhân viên</a></li>
+        <li><a href="quanLyMuonSach.html"><i class="fa-solid fa-book-open-reader"></i> Quản lý mượn sách</a></li>
+        <li><a href="baoCaoTK.html"><i class="fa-solid fa-square-poll-vertical"></i> Thống kê</a></li>
 
       </ul>
     </aside>
 
     <main class="main-content">
       <header class="header">
-        <h2>Quản lý độc giả</h2>
+        <h2>Quản lý sách</h2>
         <div class="logout">
           <span><i class="fa-solid fa-right-from-bracket"></i></span> <a href="#">Đăng xuất</a>
         </div>
@@ -38,7 +39,7 @@
       <div class="table-controls">
         <input type="text" placeholder="Tìm kiếm..." class="search" />
         <div class="actions">
-          <button><i class="fa-solid fa-plus"></i> Thêm</button>
+          <button><i class="fa-solid fa-plus"></i><a href="themSach.html"> Thêm</a></button>
           <button><i class="fa-solid fa-trash"></i> Xóa</button>
           <button><i class="fa-solid fa-pen"></i> Sửa</button>
         </div>
@@ -49,22 +50,20 @@
           <tr>
             <th><input type="checkbox" /></th>
             <th>Mã</th>
-            <th>Họ tên</th>
-            <th>Ngày sinh</th>
-            <th>SĐT</th>
-            <th>Email</th>
-            <th>Chức vụ</th>
+            <th>Tổng sách</th>
+            <th>Đang mượn</th>
+            <th>Còn lại</th>
+            <th>Ghi chú</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><input type="checkbox" /></td>
             <td>001</td>
-            <td>Nguyễn Văn A</td>
-            <td>22/01/2005</td>
-            <td>012456</td>
-            <td>vana@gmail.com </td>
-            <td>Thủ kho</td>
+            <td>123</td>
+            <td>0</td>
+            <td>120</td>
+            <td>Nhập thêm </td>
           </tr>
 
         </tbody>
@@ -76,7 +75,6 @@
         <a href="#">4</a>
         <span class="dots">...</span>
       </div>
-
     </main>
   </div>
 </body>

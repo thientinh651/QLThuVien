@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Quản lý Độc Giả</title>     <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+  <link rel="stylesheet" href="style/QLDG.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <i class="fa-solid fa-book-open"></i>
+      </div>
+      <ul class="menu">
+        <li><a href="indexNhanVien.html"><i class="fas fa-book"></i> Trang chủ</a></li>
+        <li><a href="quanLySach.html"><i class="fa-solid fa-book-open"></i> Quản lý sách</a></li>
+        <li class="active"><a href="quanLyDocGia.html"><i class="fa-solid fa-user"></i> Quản lý độc giả</a></li>
+        <li><a href="quanLyNhanVien.html"><i class="fa-solid fa-user-tie"></i> Quản lý nhân viên</a></li>
+        <li><a href="quanLyMuonSach.html"><i class="fa-solid fa-book-open-reader"></i> Quản lý mượn sách</a></li>
+        <li><a href="baoCaoTK.html"><i class="fa-solid fa-square-poll-vertical"></i> Thống kê</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <h2>Quản lý độc giả</h2>
+        <div class="logout">
+          <span><i class="fa-solid fa-right-from-bracket"></i></span> <a href="#">Đăng xuất</a>
+        </div>
+      </header>
+
+      <div class="table-controls">
+  <input type="text" placeholder="Tìm kiếm độc giả..." class="search" />
+  
+  <select>
+    <option>Giới tính</option>
+    <option>Nam</option>
+    <option>Nữ</option>
+  </select>
+  
+  <select>
+    <option>Độ tuổi</option>
+    <option>Dưới 18</option>
+    <option>18 - 30</option>
+    <option>Trên 30</option>
+  </select>
+  
+  <select>
+    <option>Sách đang mượn</option>
+    <option>Có</option>
+    <option>Không</option>
+  </select>
+
+  <div class="actions">
+    <button><i class="fa-solid fa-plus"></i> <a href="#">Thêm</a></button>
+    <button><i class="fa-solid fa-trash"></i> Xóa</button>
+    <button><i class="fa-solid fa-pen"></i> Sửa</button>
+  </div>
+</div>
+
+
+      <table>
+        <thead>
+          <tr>
+            <th>Mã</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>SDT</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DGO 001</td>
+            <td>Nguyễn văn Hai</td>
+            <td>7/11/1999</td>
+            <td>0847977781</td>
+            <td>nguyenvanhai@gmail.com</td>
+          </tr>
+          <tr>
+            <td>DGO 002</td>
+            <td>Nguyễn văn Ba</td>
+            <td>12/3/1999</td>
+            <td>0123456789</td>
+            <td>nguyenvanba@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="reader-details">
+        <h3>Chi tiết độc giả</h3>
+        <p><strong>Họ tên:</strong> Nguyễn văn Hai</p>
+        <p><strong>Ngày sinh:</strong> 7/11/1999</p>
+        <p><strong>SDT:</strong> 0847977781</p>
+        <p><strong>Email:</strong> nguyenvanhai@gmail.com</p>
+        <p><strong>Số thẻ thư viện:</strong> TV001</p>
+        <p><strong>Ngày cấp:</strong> 02/02/2025</p>
+        <p><strong>Sách mượn:</strong> Mượn sách ngày 07/11/2024</p>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

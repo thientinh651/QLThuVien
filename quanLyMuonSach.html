@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Quản lý sách</title>
-  <link rel="stylesheet" href="styleQLS.css">
+  <title>Quản lý phiếu mượn</title>     <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+  <link rel="stylesheet" href="style/QLS.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,19 +18,18 @@
         <i class="fa-solid fa-book-open"></i>
       </div>
       <ul class="menu">
-        <li><a href="../index.html"><i class="fas fa-book"></i> Trang chủ</a></li>
-        <li ><a href="QuanLySach.html"><i class="fa-solid fa-book-open"></i> Quản lý sách</a></li>
-        <li><a href="../DocGiaVaTraSach/DocGia/index.html"><i class="fa-solid fa-user"></i> Quản lý độc giả</a></li>
-        <li ><a href="QuanLyNhanVien.html"><i class="fa-solid fa-user-tie"></i> Quản lý nhân viên</a></li>
-        <li><a href="../DocGiaVaTraSach/TraSach/index.html"><i class="fa-solid fa-book-open-reader"></i> Quản lý mượn sách</a></li>
-        <li><a href="../ThanhToanTraCuuThongKe/baocao_thongke.html"><i class="fa-solid fa-square-poll-vertical"></i> Thống kê</a></li>
-
+        <li><a href="indexNhanVien.html"><i class="fas fa-book"></i> Trang chủ</a></li>
+        <li><a href="quanLySach.html"><i class="fa-solid fa-book-open"></i> Quản lý sách</a></li>
+        <li><a href="quanLyDocGia.html"><i class="fa-solid fa-user"></i> Quản lý độc giả</a></li>
+        <li><a href="quanLyNhanVien.html"><i class="fa-solid fa-user-tie"></i> Quản lý nhân viên</a></li>
+        <li><a href="quanLyMuonSach.html" class="active"><i class="fa-solid fa-book-open-reader"></i> Quản lý mượn sách</a></li>
+        <li><a href="baoCaoTK.html"><i class="fa-solid fa-square-poll-vertical"></i> Thống kê</a></li>
       </ul>
     </aside>
 
     <main class="main-content">
       <header class="header">
-        <h2>Quản lý sách</h2>
+        <h2>Quản lý phiếu mượn sách</h2>
         <div class="logout">
           <span><i class="fa-solid fa-right-from-bracket"></i></span> <a href="#">Đăng xuất</a>
         </div>
@@ -38,7 +38,7 @@
       <div class="table-controls">
         <input type="text" placeholder="Tìm kiếm..." class="search" />
         <div class="actions">
-          <button><i class="fa-solid fa-plus"></i> Thêm</button>
+          <button><i class="fa-solid fa-plus"></i> <a href="themPhieuMuon.html">Thêm</a></button>
           <button><i class="fa-solid fa-trash"></i> Xóa</button>
           <button><i class="fa-solid fa-pen"></i> Sửa</button>
         </div>
@@ -48,30 +48,33 @@
         <thead>
           <tr>
             <th><input type="checkbox" /></th>
-            <th>Mã</th>
-            <th>Tổng sách</th>
-            <th>Đang mượn</th>
-            <th>Còn lại</th>
-            <th>Ghi chú</th>
+            <th>Mã sách</th>
+            <th>Tên sách</th>
+            <th>Mã phiếu mượn</th>
+            <th>Ngày mượn</th>
+            <th>Ngày trả dự kiến</th>
+            <th>Ngày trả thực tế</th>
+            <th>Trạng thái</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><input type="checkbox" /></td>
-            <td>001</td>
-            <td>123</td>
-            <td>0</td>
-            <td>120</td>
-            <td>Nhập thêm </td>
+            <td>MS001</td>
+            <td>Lập trình C++</td>
+            <td>PM123</td>
+            <td>2025-05-01</td>
+            <td>2025-05-10</td>
+            <td>--</td>
+            <td>Đang mượn</td>
           </tr>
-
         </tbody>
       </table>
+
       <div class="pagination">
         <a href="#" class="active">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
-        <a href="#">4</a>
         <span class="dots">...</span>
       </div>
     </main>

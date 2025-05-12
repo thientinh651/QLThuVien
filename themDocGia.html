@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Thêm Độc Giả</title>     <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+  <link rel="stylesheet" href="style/QLNV.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-actions {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .form-actions button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-actions button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <i class="fa-solid fa-book-open"></i>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html"><i class="fas fa-book"></i> Trang chủ</a></li>
+        <li><a href="quanLySach.html"><i class="fa-solid fa-book-open"></i> Quản lý sách</a></li>
+        <li><a class="active" href="quanLyDocGia.html"><i class="fa-solid fa-user"></i> Quản lý độc giả</a></li>
+        <li><a href="quanLyNhanVien.html"><i class="fa-solid fa-user-tie"></i> Quản lý nhân viên</a></li>
+        <li><a href="quanLyMuonSach.html"><i class="fa-solid fa-book-open-reader"></i> Quản lý mượn sách</a></li>
+        <li><a href="baoCaoTK.html"><i class="fa-solid fa-square-poll-vertical"></i> Thống kê</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <h2>Thêm độc giả</h2>
+
+        <div class="logout">
+          <span><i class="fa-solid fa-right-from-bracket"></i></span> <a href="quanLyDocGia.html">Quay lại</a>
+        </div>
+      </header>
+
+      <div class="form-container">
+        <h2>Nhập thông tin độc giả</h2>
+        <form action="#">
+          <div class="form-group">
+            <label for="ma">Mã độc giả</label>
+            <input type="text" id="ma" placeholder="Nhập mã độc giả" required />
+          </div>
+          <div class="form-group">
+            <label for="hoten">Họ tên</label>
+            <input type="text" id="hoten" placeholder="Nhập họ tên" required />
+          </div>
+          <div class="form-group">
+            <label for="ngaysinh">Ngày sinh</label>
+            <input type="date" id="ngaysinh" required />
+          </div>
+          <div class="form-group">
+            <label for="sdt">Số điện thoại</label>
+            <input type="text" id="sdt" placeholder="Nhập số điện thoại" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Nhập email" required />
+          </div>
+          <div class="form-group">
+            <label for="soThe">Số thẻ thư viện</label>
+            <input type="text" id="soThe" placeholder="VD: TV001" required />
+          </div>
+          <div class="form-group">
+            <label for="ngayCap">Ngày cấp</label>
+            <input type="date" id="ngayCap" required />
+          </div>
+          <div class="form-group">
+            <label for="sachMuon">Sách mượn</label>
+            <input type="text" id="sachMuon" placeholder="Thông tin mượn sách (nếu có)" />
+          </div>
+          <div class="form-actions">
+            <button type="submit">Lưu thông tin</button>
+          </div>
+          
+
+
+        </form>
+      </div>
+
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Thêm phiếu mượn</title>     <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+  <link rel="stylesheet" href="style/QLS.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .form-container {
+      background: white;
+      width: 100%;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      max-width: 1000px;
+      min-width: 400px;
+      margin: 0 auto;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .form-actions {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .form-actions button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .form-actions button:hover {
+      background-color: #2980b9;
+    }
+
+    button a {
+      color: black;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <i class="fa-solid fa-book-open"></i>
+      </div>
+      <ul class="menu">
+        <li><a href="../index.html"><i class="fas fa-book"></i> Trang chủ</a></li>
+        <li><a href="QuanLySach.html"><i class="fa-solid fa-book-open"></i> Quản lý sách</a></li>
+        <li><a href="../DocGiaVaTraSach/DocGia/index.html"><i class="fa-solid fa-user"></i> Quản lý độc giả</a></li>
+        <li><a href="QuanLyNhanVien.html"><i class="fa-solid fa-user-tie"></i> Quản lý nhân viên</a></li>
+        <li><a href="QuanLyPhieuMuon.html" class="active"><i class="fa-solid fa-book-open-reader"></i> Quản lý mượn
+            sách</a></li>
+        <li><a href="../ThanhToanTraCuuThongKe/baocao_thongke.html"><i class="fa-solid fa-square-poll-vertical"></i>
+            Thống kê</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <h2>Thêm phiếu mượn sách</h2>
+        <!-- <div class="logout">
+          <span><i class="fa-solid fa-right-from-bracket"></i></span> <a href="#">Đăng xuất</a>
+        </div> -->
+        <div class="form-group">
+          <button><a href="quanLyMuonSach.html">Quay lại</a></button>
+        </div>
+      </header>
+
+      <div class="form-container">
+        <form>
+          <div class="form-group">
+            <label for="maSach">Mã sách</label>
+            <input type="text" id="maSach" name="maSach" required />
+          </div>
+
+          <div class="form-group">
+            <label for="tenSach">Tên sách</label>
+            <input type="text" id="tenSach" name="tenSach" required />
+          </div>
+
+          <div class="form-group">
+            <label for="maPhieu">Mã phiếu mượn</label>
+            <input type="text" id="maPhieu" name="maPhieu" required />
+          </div>
+
+          <div class="form-group">
+            <label for="ngayMuon">Ngày mượn</label>
+            <input type="date" id="ngayMuon" name="ngayMuon" required />
+          </div>
+
+          <div class="form-group">
+            <label for="ngayTraDuKien">Ngày trả dự kiến</label>
+            <input type="date" id="ngayTraDuKien" name="ngayTraDuKien" required />
+          </div>
+
+          <div class="form-group">
+            <label for="ngayTraThucTe">Ngày trả thực tế</label>
+            <input type="date" id="ngayTraThucTe" name="ngayTraThucTe" />
+          </div>
+
+          <div class="form-group">
+            <label for="trangThai">Trạng thái</label>
+            <select id="trangThai" name="trangThai">
+              <option>Đang mượn</option>
+              <option>Đã trả</option>
+              <option>Quá hạn</option>
+            </select>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit"><i class="fa-solid fa-check"></i> Lưu</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

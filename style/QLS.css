@@ -83,7 +83,10 @@
   justify-content: space-between;
   margin: 20px 0;
 }
-
+.table-controls a {
+  text-decoration: none;
+  color: black;
+}
 .search {
   padding: 6px 10px;
   border: 1px solid #ccc;
@@ -136,4 +139,9 @@ table th {
     display: inline-block;
     margin-left: 5px;
     color: #777;
+}
+
+td:last-child {
+  font-weight: bold;
+  color: #e67e22; /* Màu cam cho trạng thái */
 }
