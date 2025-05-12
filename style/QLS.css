@@ -40,6 +40,7 @@
 
 .sidebar ul li a.active {
     font-weight: bold;
+  background-color: #5b6471;
 }
 .sidebar ul li a {
     color: white;

@@ -36,6 +36,7 @@
  color: white;
 }
 .sidebar .menu li.active {
+  padding: 10px;
   font-weight: bold;
   background-color: #5b6471;
 }

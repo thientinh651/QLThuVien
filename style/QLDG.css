@@ -39,7 +39,11 @@
   padding: 10px;
   border-radius: 5px;
 }
-
+.sidebar .menu li.active {
+  /* padding: 10px; */
+  font-weight: bold;
+  background-color: #5b6471;
+}
 .sidebar ul li a:hover, .sidebar ul li a.active {
   font-weight: bold;
   background-color: #555;

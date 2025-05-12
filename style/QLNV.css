@@ -41,9 +41,14 @@
 }
 
 .sidebar ul li a.active {
-  font-weight: bold;
+  font-weight: bold;font-weight: bold;
+  background-color: #5b6471;
 }
 
+.active {
+  font-weight: bold;font-weight: bold;
+  background-color: #5b6471;
+}
 .sidebar ul li a {
   color: white;
   text-decoration: none;
